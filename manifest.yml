@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: httpd-deployment
+  name: httpd-deployment-test
   labels:
     app: httpd
 spec:
