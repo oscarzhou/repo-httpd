@@ -4,7 +4,7 @@ services:
   httpd-container:
     image: httpd:latest
     container_name: httpd-test-container
-    label: 
+    labels: 
       - "version=3"
     ports:
       - "${PORT:-5567}:80"
