@@ -5,4 +5,4 @@ services:
     image: httpd:latest
     container_name: httpd-test-container
     ports:
-      - "${PORT:-8081}:80"
+      - "${PORT:-5566}:80"
