@@ -5,6 +5,6 @@ services:
     image: httpd:latest
     container_name: httpd-test-container
     labels: 
-      - "version=6"
+      - "custom-version=6"
     ports:
-      - "${PORT:-5567}:80"
+      - "${PORT:-7770}:80"
