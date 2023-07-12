@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  httpd-container:
+    image: httpd:latest
+    container_name: httpd-test-container-1
+    labels: 
+      - "custom-version=1"
+    ports:
+      - "${PORT:-7770}:80"
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+      restart_policy:
+        condition: on-failure
